@@ -1,5 +1,5 @@
 # Ex-3-RECOGNITION-OF-A-VALID-ARITHMETIC-EXPRESSION-THAT-USES-OPERATOR-AND-USING-YACC
-# Date:
+# Date: 24-03-2026
 # AIM
 To write a yacc program to recognize a valid arithmetic expression that uses operator +,- ,* and /.
 # ALGORITHM
@@ -12,6 +12,14 @@ To write a yacc program to recognize a valid arithmetic expression that uses ope
 7.	Compile these with the C compiler as gcc lex.yy.c y.tab.c
 8.	Enter an arithmetic expression as input and the tokens are identified as output.
 # PROGRAM
+```
+flex exp3cd.l
+bison -d exp3cd.y
+gcc lex.yy.c exp3cd.tab.c -o a.exe
+a.exe
+```
 # OUTPUT
+<img width="1036" height="858" alt="image" src="https://github.com/user-attachments/assets/2be16a55-60ab-425a-826a-98bb1191a51a" />
+
 # RESULT
 A YACC program to recognize a valid arithmetic expression that uses operator +,-,* and / is executed successfully and the output is verified.
